@@ -2,49 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;1,200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/brands.css" rel="stylesheet" />
+    <link href="css/solid.css" rel="stylesheet" />
+    
+    <link href="css/fontawesome.css" rel="stylesheet" />
+
+
 </head>
 <body>
 
   <header>
+    
     <a href="#">  <img src="img/Logo.png" > </a> 
     <nav>
-        <ul>
-            <li><a href="#" class="active">Portfolio</a> </li>
-            <li><a href="#">about</a> </li>
-            <li><a href="#">Bookings</a> </li>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+         <div class="nav-links" id ="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        
+        
+            <ul>
+                <li><a href="#" class="active">Portfolio</a> </li>
+                <li><a href="#">about</a> </li>
+                <li><a href="#">Bookings</a> </li>
 
-        </ul>
+            </ul>
+        </div>
+           
     </nav>
 
     </header>
 
+   
+  <!-- hero section-->
   <div class="hero-image">
 
-    <div class="hero-text">
-        <h1>Portrait photographer based <br> in New York, Austin,<br> El Paso.</h1>
-        <div class="cta-button">
-            <a href="#" class="primary-cta">Portfolio</a>
-            <a href="#" class="secondary-cta"><span>Book a Session</span>
-                              
-                <svg  viewBox="0 0 29 23" fill="none" class="arrow">
-                    <path d="M28.0401 12.8309C28.637 12.2564 28.6553 11.3069 28.0809 10.7099L18.7202 0.982212C18.1458 0.385271 17.1962 0.367009 16.5993 0.941424C16.0024 1.51584 15.9841 2.46541 16.5585 3.06235L24.8791 11.7092L16.2322 20.0298C15.6353 20.6042 15.617 21.5538 16.1914 22.1507C16.7658 22.7476 17.7154 22.7659 18.3123 22.1915L28.0401 12.8309ZM0.971158 12.7497L26.9712 13.2497L27.0288 10.2503L1.02884 9.75027L0.971158 12.7497Z" fill="white"/>
-                </svg>
-                    
-            </a>
+
+        <div class="hero-text">
+            <h1>Portrait photographer based <br> in New York, Austin,<br> El Paso.</h1>
+           
+            <div class="cta-button">
+                <a href="#" class="primary-cta">Portfolio</a>
+                <a href="#" class="secondary-cta"><span>Book a Session</span>
+                                
+                    <svg  viewBox="0 0 29 23" fill="none" class="arrow">
+                        <path d="M28.0401 12.8309C28.637 12.2564 28.6553 11.3069 28.0809 10.7099L18.7202 0.982212C18.1458 0.385271 17.1962 0.367009 16.5993 0.941424C16.0024 1.51584 15.9841 2.46541 16.5585 3.06235L24.8791 11.7092L16.2322 20.0298C15.6353 20.6042 15.617 21.5538 16.1914 22.1507C16.7658 22.7476 17.7154 22.7659 18.3123 22.1915L28.0401 12.8309ZM0.971158 12.7497L26.9712 13.2497L27.0288 10.2503L1.02884 9.75027L0.971158 12.7497Z" fill="white"/>
+                    </svg>
+                        
+                </a>
+
+            </div>
+        </div>
+   </div>
+   <div class="spacer"></div>
+   <!-- pre - portfolio section-->
+    <div class="pre-portfolio">
+        <div class = "row">
+         
+            <img src="img/web-1.jpg">
+            <img src="img/web-1-8.jpg">
+
+          
+            <div class="sub-text-div-col"> 
+                <p class="sub-text">“As a professional photographer, I am 
+                                    to capture the essence and beauty of  
+                                    the world around me through the lens 
+                                    of my camera”.  </p>
 
         </div>
     </div>
+        
 
-  </div>
+    </div>
+    <div class="spacer"></div>
+
+    <!--portfolio section-->
+    <div class="fullimage-container">
+
+        <img class="full-image" src="img/web-1-13.jpg">
+        <div class="portfolio-text">
+            <h1>Portfolio
+        </div>
+
+    </div>
+    <div class="spacer"></div>
+
+        <div class="imagen-portfolio">
+            <img src="img/web-1-20.jpg">
+            <img src="img/web-1-19.jpg">
+            <img src="img/web-1-5.jpg">
+        </div>
+
+        <div class="fullimage-container">
+            <img class="full-image" src="img/web-1-6.jpg">
+            <div class="portfolio-text-parag">
+                <p> Photography has always been considered a form of magic, as it captures moments of the past, present and future, preserving them for eternity. It has the ability to capture emotions, memories, and expressions of people, places, and things in a way that surpasses other art forms, creating a world of beauty, wonder, and discovery.</p>
+            </div>
+        </div>    
+
+        <div class="spacer"></div>
+        <div class="imagen-portfolio">
+            <img src="img/web-1-2.jpg">
+            <img src="img/web-1-3.jpg">
+            <img src="img/web-1-15.jpg">
+        </div>
+        <div class="fullimage-container">
+            <img class="full-image" src="img/web-1-18.jpg">
+        </div>
+       <!--about section-->
+
+       <div class="spacer"></div>
+
+        <div class="about">
+
+            <div class="row">
+                <div class="sub-text-div"> 
+                    <div class="container-h1">
+                        <h1>About the photographer</h1>
+                    </div> 
+                    <p class="sub-text-about">
+                        Carlos is a portrait photographer who is known for his ability to capture raw emotions in his subjects, combined with his masterful use of color and composition. He creates photographs that resonate on a deeply emotional level. His evocative portraits continue to inspire and captivate audiences in the photography world.  
+
+   
+                </div>
+                <div class="about-imagenes">
+                    <img src="img/web-1-25.jpg">
+                </div>  
+            </div>           
+        </div>
+
+        <!-- bookings section-->
+
+        <div class="spacer"></div>
+        <div class="bookings">
+            
+            <div class="inner-bookings">
+  
+                <div class="form">
+                    <div class="h1-align"><h1>Bookings</h1></div>
+                    <p class = "form-color">First name <input type = "text" name = "firstName" class="bookings-textbox">
+                    <p class = "form-color">Last name <input type = "text" name = "firstName" class="bookings-textbox">
+                    <p class = "form-color">Email Address <input type = "text" name = "firstName" class="bookings-textbox">
+                    <p class = "form-color">Phone Number <input type = "text" name = "firstName" class="bookings-textbox">
+                    <p class = "form-color">Requested Date <input type = "text" name = "firstName" class="bookings-textbox">
+                    <p class = "form-color">Session Location  <input type = "text" name = "firstName" class="bookings-textbox">
+             
+                </div>
+                <div class="align-button">
+                    <a href="#" class="submit-button">Book a Session</a>
+                 </div>
+            </div>
 
 
-    
+        </div>
+
+        <!-- footer section-->
+
+        <div class="footer">
+            <div class="footer-container">
+
+                <div class="footer-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M12 22c5.421 0 10-4.579 10-10S17.421 2 12 2 2 6.579 2 12s4.579 10 10 10zm0-18c4.337 0 8 3.663 8 8s-3.663 8-8 8-8-3.663-8-8 3.663-8 8-8z"></path><path d="M12 17c.901 0 2.581-.168 3.707-1.292l-1.414-1.416C13.85 14.735 12.992 15 12 15c-1.626 0-3-1.374-3-3s1.374-3 3-3c.993 0 1.851.265 2.293.707l1.414-1.414C14.582 7.168 12.901 7 12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5z"></path></svg>
+                    2024 by Carlos Monzon
+                 </div>
+                 
+                 <div class="footer-text-icons">  <br> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);transform: ;msFilter:;"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                </div>
+
+
+            </div>
+        </div>
+<!----JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-600px"
+
+
+    }
+
+</script>
+
 
 </body>
 </html>
