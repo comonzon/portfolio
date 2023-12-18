@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,7 @@
   <header>
     
     <a href="#">  <img src="img/Logo.png" > </a> 
+    <div class="nav-wrapper">
     <nav>
         <i class="fa fa-bars" onclick="showMenu()"></i>
          <div class="nav-links" id ="navLinks">
@@ -29,15 +30,16 @@
         
         
             <ul>
-                <li><a href="#" class="active">Portfolio</a> </li>
-                <li><a href="#">about</a> </li>
-                <li><a href="#">Bookings</a> </li>
+                <li><a href="#portfolio" class="active">Portfolio</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#bookings">Bookings</a> </li>
 
             </ul>
         </div>
            
     </nav>
 
+    </div>
     </header>
 
    
@@ -49,8 +51,8 @@
             <h1>Portrait photographer based <br> in New York, Austin,<br> El Paso.</h1>
            
             <div class="cta-button">
-                <a href="#" class="primary-cta">Portfolio</a>
-                <a href="#" class="secondary-cta"><span>Book a Session</span>
+                <a href="#portfolio" class="primary-cta">Portfolio</a>
+                <a href="#bookings" class="secondary-cta"><span>Book a Session</span>
                                 
                     <svg  viewBox="0 0 29 23" fill="none" class="arrow">
                         <path d="M28.0401 12.8309C28.637 12.2564 28.6553 11.3069 28.0809 10.7099L18.7202 0.982212C18.1458 0.385271 17.1962 0.367009 16.5993 0.941424C16.0024 1.51584 15.9841 2.46541 16.5585 3.06235L24.8791 11.7092L16.2322 20.0298C15.6353 20.6042 15.617 21.5538 16.1914 22.1507C16.7658 22.7476 17.7154 22.7659 18.3123 22.1915L28.0401 12.8309ZM0.971158 12.7497L26.9712 13.2497L27.0288 10.2503L1.02884 9.75027L0.971158 12.7497Z" fill="white"/>
@@ -88,7 +90,7 @@
 
         <img class="full-image" src="img/web-1-13.jpg">
         <div class="portfolio-text">
-            <h1>Portfolio
+            <h1 id="portfolio">Portfolio
         </div>
 
     </div>
@@ -120,18 +122,18 @@
 
        <div class="spacer"></div>
 
-        <div class="about">
+        <div class="about" id="about">
 
             <div class="row">
                 <div class="sub-text-div"> 
+                    
                     <div class="container-h1">
                         <h1>About the photographer</h1>
                     </div> 
                     <p class="sub-text-about">
                         Carlos is a portrait photographer who is known for his ability to capture raw emotions in his subjects, combined with his masterful use of color and composition. He creates photographs that resonate on a deeply emotional level. His evocative portraits continue to inspire and captivate audiences in the photography world.  
-
-   
                 </div>
+
                 <div class="about-imagenes">
                     <img src="img/web-1-25.jpg">
                 </div>  
@@ -141,7 +143,7 @@
         <!-- bookings section-->
 
         <div class="spacer"></div>
-        <div class="bookings">
+        <div class="bookings" id="bookings">
             
             <div class="inner-bookings">
   
@@ -186,11 +188,12 @@
     var navLinks = document.getElementById("navLinks");
 
     function showMenu(){
-        navLinks.style.right = "";
+        navLinks.style.display = "block";
     }
 
     function hideMenu(){
-        navLinks.style.right = "-600px"
+
+        navLinks.style.display = "none";
 
 
     }
